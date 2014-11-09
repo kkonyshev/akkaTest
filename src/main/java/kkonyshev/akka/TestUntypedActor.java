@@ -2,6 +2,11 @@ package kkonyshev.akka;
 
 import akka.actor.UntypedActor;
 
+/**
+ * 
+ * @author ka
+ *
+ */
 public class TestUntypedActor extends UntypedActor {
 
 	public void onReceive(Object message) throws Exception {
@@ -9,6 +14,7 @@ public class TestUntypedActor extends UntypedActor {
 			System.out.println("We've got super message - " + message);
 		} else if (message instanceof String) {
 			System.out.println("Process string - " + message);
+			
 		}
 	}
 }
